@@ -1,14 +1,16 @@
 import { Client } from "@/types";
+import  l2 from "@/public/assets/images/Blog Section/idfc.webp"
+import  l3 from "@/public/assets/images/Blog Section/icici.webp"
+import  l1 from "@/public/assets/images/Blog Section/hdfc2.webp"
+import  l4 from "@/public/assets/images/Blog Section/kotak.webp"
+import  l5 from "@/public/assets/images/Blog Section/indus4.jpg"
 
 const baseLogos = [
-  { logo: "/assets/images/clients/client_logo_11.webp", alt: "Client Logo" },
-  { logo: "/assets/images/clients/client_logo_12.webp", alt: "Client Logo" },
-  { logo: "/assets/images/clients/client_logo_13.webp", alt: "Client Logo" },
-  { logo: "/assets/images/clients/client_logo_14.webp", alt: "Client Logo" },
-  { logo: "/assets/images/clients/client_logo_15.webp", alt: "Client Logo" },
-  { logo: "/assets/images/clients/client_logo_16.webp", alt: "Client Logo" },
-  { logo: "/assets/images/clients/client_logo_17.webp", alt: "Client Logo" },
-  { logo: "/assets/images/clients/client_logo_18.webp", alt: "Client Logo" },
+  { logo: l1.src, alt: "HDFC BANK" },
+  { logo: l2.src, alt: "IDFC BANK" },
+  { logo: l3.src, alt: "ICICI BANK" },
+  { logo: l4.src, alt: "KOTAK MAHINDRA BANK" },
+  { logo: l5.src, alt: "INDUSIND BANK" }
 ];
 
 export const clients: Client[] = [...baseLogos, ...baseLogos]; // duplicated for infinite scroll effect

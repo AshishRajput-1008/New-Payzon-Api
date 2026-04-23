@@ -4,21 +4,25 @@ export const footerLinkGroups: FooterLinkGroup[] = [
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "/about" },
-      { label: "Careers", href: "/career" },
-      { label: "Terms of Use", href: "/terms" },
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Contact Us", href: "/contact" },
+        { label: "Sign In", href: "https://payzonapi.com/account/sign-in" },
+      { label: "About Us", href: "/our-profile" },
+      { label: "Terms of Use", href: "/terms-conditions" },
+      { label: "Privacy Policy", href: "/privacy-policy " },
+      { label: "Refund & Cancellation", href: "/refund-cancellation" },
+
     ],
   },
   {
-    title: "Accept Payments",
+    title: "Services",
     links: [
-      { label: "Payzon POS", href: "#" },
-      { label: "Payment Pages", href: "#" },
-      { label: "Payment Links", href: "#" },
-      { label: "QR Codes", href: "#" },
-      { label: "Payment Gateway", href: "#" },
+       { label: "PayIn Sevices ", href: "/services/pay-in" },
+      { label: "PayOut Services", href: "/services/pay-out" },
+      { label: " QR Payment ", href: "/services/qr-payment" },
+      { label: "Virtual Account", href: "/services/virtual-account" },
+      { label: "Restricted Services", href: "/Restricted-Services" },
+      
     ],
   },
 ];
+
+    // { label: "Contact Us", href: "/contact" },

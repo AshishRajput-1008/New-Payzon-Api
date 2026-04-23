@@ -8,7 +8,7 @@ import shape1 from "@/public/assets/images/Cprocess/process_line_shape_1.webp"
 import shapearrow1 from "@/public/assets/images/Cprocess/shape_arrow_1.webp"
 import shapearrow2 from "@/public/assets/images/Cprocess/shape_arrow_2.webp"
 import pattern3 from "@/public/assets/images/Cprocess/shape_pattern_3.svg"
-import logo from  "@/public/assets/images/Cprocess/logo2bgremove.png"
+import logo from  "@/public/assets/images/avatar/newlogowithbg.png"
 
 const shapes = [
   { className: "shape_nate_1", image: shape17.src, alt: "Shape Nate" },
@@ -28,7 +28,7 @@ export default function ContactProcess() {
           <div className="site_logo text-center">
             <Link className="site_link" href="/">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={logo.src} alt="Site Logo White" />
+              <img style={{borderRadius:"50%"}} src={logo.src} alt="Site Logo White" />
             </Link>
           </div>
 

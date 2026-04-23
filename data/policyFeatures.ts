@@ -11,25 +11,25 @@ export const policyFeatures: PolicyFeature[] = [
   {
     icon: icon_browser.src,
     bgImage: shape_1.src,
-    title: "Fast & Secure",
-    description: "Prioritizing Expediency, Safety in Every Transaction.",
+    title: "High Success Rate",
+    description: "Reliable payment processing with maximum approval ratio.",
   },
   {
     icon: icon_chat.src,
     bgImage: shape_2.src,
-    title: "24/7 Live Support",
-    description: "24/7 Live Assistance: Support Always Available",
+    title: "Easy to Integrate",
+    description: "Quick API setup for PayIn, PayOut, QR & VA services.",
   },
   {
     icon: icon_api.src,
     bgImage: shape_3.src,
-    title: "Targeted Built API",
-    description: "Tailored API Customized Solutions for You",
+    title: "Secure Transactions",
+    description: "Advanced security layers for safe digital payments.",
   },
   {
     icon: icon_layer.src,
     bgImage: shape_2.src,
-    title: "Automated Flow",
-    description: "Automated Workflow Processes for Efficiency",
+    title: "Faster Processing",
+    description: "Instant settlements and smooth transaction flow.",
   },
 ];

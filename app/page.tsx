@@ -10,12 +10,13 @@ import PSPolicy from "@/components/sections/PSPolicy";
 import Pricing from "@/components/sections/Pricing";
 import IntegratingSection from "@/components/sections/IntegratingSection";
 import BlogSection from "@/components/sections/BlogSection";
+import ScrollToTop from "@/components/ScrollToTop";
+
 
 export default function HomePage() {
   return (
     <div className="page_wrapper">
       <BackToTop />
-      <Header />
 
       <main className="page_content">
         <HeroSection />
@@ -33,7 +34,7 @@ export default function HomePage() {
         <BlogSection />
       </main>
 
-      <Footer />
+
     </div>
   );
 }

@@ -164,3 +164,38 @@ body {
 .extraboldN{
   font-weight: 900 !important;
 }
+
+/* globals.css */
+
+.integration-img {
+  width: 60% !important;
+  max-width: 620px;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .integration-img {
+    width: 82% !important;
+    max-width: 720px;
+  }
+}
+
+/* Mobile - decreased size */
+@media (max-width: 767px) {
+  .integration-img {
+    width: 91% !important;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.restricted-hover {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.restricted-hover:hover {
+  color: oklch(65.6% 0.241 354.308);
+}

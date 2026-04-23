@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     image: blog_image_15.src,
-    category: "Business",
+    category: "IT Tech",
     date: "",
     title: "The Role of Blockchain Technology in Payment Solutions.",
     href: "/blog-details",

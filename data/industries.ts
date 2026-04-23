@@ -26,7 +26,7 @@ export const industries: Industry[] = [
   },
   {
     icon: icobox2.src,
-    title: "Freelance",
+    title: "Freelancer's",
     content:
       "Share a QR code to get paid instantly on the go, receive client payments through Pay In, and withdraw earnings via Payout directly to your bank — simple, fast, and hassle-free.",
   },
