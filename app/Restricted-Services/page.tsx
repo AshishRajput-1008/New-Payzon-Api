@@ -242,7 +242,7 @@ const PROHIBITED = [
   },
 ];
 
-const RESTRICTED = [
+const RESTRICTED: RestrictedItem[] = [
   {
     id: "forex",
     icon: (
@@ -601,9 +601,35 @@ const RISK_BADGES = {
   },
 };
 
+type ProhibitedItem = {
+  id: string;
+  icon: React.ReactNode;
+  ref: string;
+  title: string;
+  description: string;
+  tags: string[];
+};
+
+type RestrictedItem = {
+  id: string;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  tags: string[];
+  level: keyof typeof RISK_BADGES;
+  approval: string;
+};
+
+
 // ─── Components ───────────────────────────────────────────────────────────────
 
-function ProhibitedCard({ item, index }) {
+function ProhibitedCard({
+  item,
+  index,
+}: {
+  item: ProhibitedItem;
+  index: number;
+}) {
   return (
     <div
       className="prohibited-card"
@@ -626,7 +652,13 @@ function ProhibitedCard({ item, index }) {
   );
 }
 
-function RestrictedCard({ item, index }) {
+function RestrictedCard({
+  item,
+  index,
+}: {
+  item: RestrictedItem;
+  index: number;
+}) {
   const badge = RISK_BADGES[item.level];
   return (
     <div
@@ -691,6 +723,8 @@ function BgDecor() {
 
 export default function RestrictedServicesPage() {
   const [activeTab, setActiveTab] = useState("all");
+
+  
 
   return (
     <>

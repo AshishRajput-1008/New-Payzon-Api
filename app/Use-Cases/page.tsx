@@ -754,7 +754,7 @@ function BgDecor() {
 // ─── Page Component ──────────────────────────────────────────────────────────
 
 export default function UseCasesPage() {
-  const [openId, setOpenId] = useState("ecommerce");
+  const [openId, setOpenId] = useState<string | null>("ecommerce");
   const toggle = (id: string) => setOpenId((prev) => (prev === id ? null : id));
 
   return (

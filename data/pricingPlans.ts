@@ -12,10 +12,10 @@ export const pricingPlans: PricingPlan[] = [
     ctaHref: "/contact",
     variant: "general",
     priceItems: [
-      { label: null, value: "1,9%" },
-      { label: null, value: "Get everything you need to manage payments" },
-      { label: null, value: "Finto mobile app is always available" },
-      { label: null, value: "No setup fees, monthly/hidden" },
+      { label: undefined, value: "1,9%" },
+      { label: undefined, value: "Get everything you need to manage payments" },
+      { label: undefined, value: "Finto mobile app is always available" },
+      { label: undefined, value: "No setup fees, monthly/hidden" },
     ],
   },
   {

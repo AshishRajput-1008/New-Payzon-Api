@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useState } from "react";
@@ -83,7 +84,7 @@ export default function PoweringIndustry() {
 
                       {/* Know More Button */}
                       <a
-                        href={industry.link ?? "/Use-Cases"}
+                        href={(industry as any).link ?? "/Use-Cases"}
                         className="know_more_btn"
                         style={{
                           display: "inline-flex",

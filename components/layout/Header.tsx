@@ -29,13 +29,15 @@ export default function SiteHeader() {
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
 
   const navRef = useRef<HTMLDivElement>(null);
+  const partnerRef = useRef<HTMLLIElement>(null);
   const drawerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const inNav = navRef.current && navRef.current.contains(e.target as Node);
+      const inPartner = partnerRef.current && partnerRef.current.contains(e.target as Node);
       const inDrawer = drawerRef.current && drawerRef.current.contains(e.target as Node);
-      if (!inNav && !inDrawer) {
+      if (!inNav && !inPartner && !inDrawer) {
         setOpenDropdowns([]);
         setMenuOpen(false);
       }
@@ -599,7 +601,7 @@ export default function SiteHeader() {
                   </li>
 
                   {/* Desktop: Partner With Us dropdown */}
-                  <li className="d-none d-lg-block" style={{ margin: 0, position: "relative" }} ref={navRef}>
+                  <li className="d-none d-lg-block" style={{ margin: 0, position: "relative" }} ref={partnerRef}>
                     <button
                       type="button"
                       className="btn bg-dark rounded-pill"

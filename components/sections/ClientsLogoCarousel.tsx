@@ -404,7 +404,7 @@ export default function ClientsLogoCarousel() {
             {[...clients, ...clients].map((client, index) => (
               <SwiperSlide key={index} style={{ width: "200px" }}>
                 <a
-                  href={client.url ?? "#"}
+                  href={(client as any).url ?? "#"}
                   target="_blank"
                   rel="noreferrer"
                   className="bank-card"
